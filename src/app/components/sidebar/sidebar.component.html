@@ -1,0 +1,13 @@
+<div class="sidebar">
+  <ul>
+    <li *ngFor="let page of pages">
+      <a
+        routerLinkActive="active"
+        [routerLink]="page.routerLink"
+        class="nav-link color-light"
+      >
+        <i class="{{ page.icon }}"></i> {{ page.name }}
+      </a>
+    </li>
+  </ul>
+</div>

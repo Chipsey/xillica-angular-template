@@ -1,0 +1,25 @@
+<div class="col-12 m-2">
+  <div class="card bg-black p-2">
+    <div style="overflow: hidden">
+      <img
+        src="{{ nft.image }}"
+        class="card-img-top"
+        style="width: 100%; height: auto"
+        alt="..."
+      />
+    </div>
+    <div class="card-body">
+      <h5 class="card-title m-0">{{ nft.title }}</h5>
+      <p class="card-text m-0">Last Bid: {{ nft.last_bid }} ETH</p>
+      <p class="card-text">{{ nft.price }}</p>
+      <div class="col-12 d-flex justify-content-center gap-1">
+        <div class="col-6">
+          <button class="btn btn-primary w-100 p-1 text-sm">Place a Bid</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-secondary w-100 p-1 text-sm">View Item</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
